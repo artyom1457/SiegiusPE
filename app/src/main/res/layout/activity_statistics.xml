@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StatisticsActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bloodRed">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/statistics_back_button"
+        android:background="@drawable/custom_back_button"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        style="@style/textShadow"
+        android:textSize="30dp"
+        android:fontFamily="@font/lithos_pro_regular"
+        android:textColor="@color/gold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+        <TableRow
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="total amount\nof gold used"
+                android:fontFamily="@font/lithos_pro_regular"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="total number of\n troops deployed"
+                android:fontFamily="@font/lithos_pro_regular"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="total number of\n troops killed"
+                android:fontFamily="@font/lithos_pro_regular"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999999"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999999"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="999999"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="won"
+                style="@style/textShadow"
+                android:textSize="25dp"
+                android:fontFamily="@font/lithos_pro_regular"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lost"
+                style="@style/textShadow"
+                android:textSize="25dp"
+                android:fontFamily="@font/lithos_pro_regular"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="win rate"
+                style="@style/textShadow"
+                android:textSize="25dp"
+                android:fontFamily="@font/lithos_pro_regular"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100%"
+                style="@style/textShadow"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/gold"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

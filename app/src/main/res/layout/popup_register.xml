@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bloodRed">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/loginIcon"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_baseline_person_outline_24"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/etNickname_register"
+                android:text="Nickname"
+                android:textColor="#CDA55B" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/etEmail_register"
+                android:text="Email"
+                android:textColor="#CDA55B" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/etPassword_register"
+                android:text="Password"
+                android:textColor="#CDA55B" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#CDA55B"
+                android:text="Create"
+                style="@style/textShadow"
+                android:fontFamily="@font/lithos_pro_regular"
+                android:textSize="20sp"
+                android:background="@drawable/custom_button"
+                android:id="@+id/btCreate"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#CDA55B"
+                android:text="Create new account"
+                style="@style/textShadow"
+                android:id="@+id/tvRegister"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

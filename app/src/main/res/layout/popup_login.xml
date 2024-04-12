@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bloodRed">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/loginIcon"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/ic_baseline_person_outline_24"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/etNickname_login"
+        android:text="Nickname"
+        android:textColor="#CDA55B" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/etPassword_login"
+        android:text="Password"
+        android:textColor="#CDA55B" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#CDA55B"
+        android:text="login"
+        android:fontFamily="@font/lithos_pro_regular"
+        android:textSize="20sp"
+        style="@style/textShadow"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btLogin"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#CDA55B"
+        android:background="@android:color/transparent"
+        android:text="register"
+        android:id="@+id/btRegister"/>
+
+
+
+
+</LinearLayout>

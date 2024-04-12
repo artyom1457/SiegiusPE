@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_popup_showcase"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_battle_text"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/lithos_pro_regular"
+        android:gravity="center"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back to main screen"
+        android:id="@+id/end_battle_back_button"
+        style="@style/textShadow"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/lithos_pro_regular"
+        android:textColor="#CDA55B"
+        android:layout_margin="20sp"
+        />
+
+</LinearLayout>

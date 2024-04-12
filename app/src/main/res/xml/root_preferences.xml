@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="Sound"
+        android:icon="@drawable/ic_baseline_music_note_24">
+        <SwitchPreferenceCompat
+            app:key="music"
+            app:title="Music" />
+
+        <SwitchPreferenceCompat
+            app:key="sfx"
+            app:title="SFX"
+            app:summary="does not affect intro screen"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Effects"
+        android:icon="@drawable/ic_baseline_color_lens_24">
+        <SwitchPreferenceCompat
+            app:key="blood"
+            app:title="Blood"
+            app:summary="does not affect intro screen"/>
+        <SwitchPreferenceCompat
+            app:key="health_bars"
+            app:title="Health Bars"
+            app:summary="does not affect intro screen"/>
+        <SwitchPreferenceCompat
+            app:key="show_dmg"
+            app:title="Show Damage numbers"
+            app:summary="does not affect intro screen"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Performance"
+        android:icon="@drawable/ic_baseline_speed_24"
+        >
+        <ListPreference
+            app:key="fps"
+            app:title="FPS"
+            app:defaultValue="30"
+            android:dialogTitle="set FPS"
+            app:entries="@array/FPS"
+            app:entryValues="@array/FPS"
+            app:summary="30 FPS"
+            />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

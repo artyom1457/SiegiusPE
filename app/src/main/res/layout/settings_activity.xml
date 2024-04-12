@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/bloodRed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:text="Settings"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:textColor="@color/gold"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+            style="@style/textShadow"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/settings_back_button"
+            android:background="@drawable/custom_back_button"
+            android:layout_margin="5dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/settings"
+        android:layout_weight="8.8"
+        />
+</LinearLayout>

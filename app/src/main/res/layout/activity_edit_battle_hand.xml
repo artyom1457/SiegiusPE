@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBattleHand"
+    android:background="@drawable/sky_gradient_background">
+
+    <LinearLayout
+        android:id="@+id/TL_troop_selection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintBottom_toTopOf="@+id/ll_Battle_Hand"
+        app:layout_constraintEnd_toStartOf="@+id/ll_troop_showcase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/custom_troop_selection"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your Army here"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:gravity="center"
+            style="@style/textShadow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drag Soldiers onto the Bar"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            style="@style/textShadow"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comanders\n pressing on the commander"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            style="@style/textShadow"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_select_caesar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/custom_hud_button"
+                app:layout_constraintDimensionRatio="1:1"
+                android:background="@drawable/caesar1"/>
+
+            <ImageButton
+                android:id="@+id/btn_select_vercing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/custom_hud_button"
+                app:layout_constraintDimensionRatio="1:1"
+                android:background="@drawable/vercing1"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soldiers"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:textColor="@color/gold"
+            android:textSize="15sp"
+            android:gravity="center"
+            style="@style/textShadow"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/IV_select_troop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/custom_hud_button"
+                    app:layout_constraintDimensionRatio="1:1" />
+                <ImageView
+                    android:id="@+id/IV_select_troop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/custom_hud_button"
+                    app:layout_constraintDimensionRatio="1:1"
+                    />
+                <ImageView
+                    android:id="@+id/IV_select_troop3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/custom_hud_button"
+                    app:layout_constraintDimensionRatio="1:1"/>
+                <ImageView
+                    android:id="@+id/IV_select_troop4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/custom_hud_button"
+                    app:layout_constraintDimensionRatio="1:1"/>
+                <ImageView
+                    android:id="@+id/IV_select_troop5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/custom_hud_button"
+                    app:layout_constraintDimensionRatio="1:1"/>
+                <ImageView
+                    android:id="@+id/IV_select_troop6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/custom_hud_button"
+                    app:layout_constraintDimensionRatio="1:1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_Battle_Hand"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="#f3d17b"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TL_troop_selection"
+        app:layout_constraintTop_toBottomOf="@id/TL_troop_selection"
+        app:layout_constraintStart_toStartOf="@id/TL_troop_selection"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/select_hud_troop1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/custom_hud_button"
+            app:layout_constraintDimensionRatio="1:1" />
+
+        <ImageView
+            android:id="@+id/select_hud_troop2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/custom_hud_button"
+            app:layout_constraintDimensionRatio="1:1" />
+
+        <ImageView
+            android:id="@+id/select_hud_troop3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/custom_hud_button"
+            app:layout_constraintDimensionRatio="1:1" />
+
+
+        <ImageView
+            android:id="@+id/select_hud_troop4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/custom_hud_button"
+            app:layout_constraintDimensionRatio="1:1" />
+
+
+        <ImageView
+            android:id="@+id/select_hud_troop5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/custom_hud_button"
+            app:layout_constraintDimensionRatio="1:1" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_troop_showcase"
+        android:layout_width="291dp"
+        android:layout_height="291dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_troop_showcase"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/troop_selection_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/ll_Battle_Hand"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842">
+
+        <ImageView
+            android:id="@+id/battle_hand_iv_showcase"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:src="@drawable/custom_hud_button"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/battle_hand_name_showcase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/gold"
+            style="@style/textShadow"
+            android:fontFamily="@font/lithos_pro_regular"
+            app:layout_constraintBottom_toTopOf="@+id/battle_hand_SV_summery_showcase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/battle_hand_iv_showcase"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:id="@+id/battle_hand_SV_summery_showcase"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/battle_hand_iv_showcase"
+            app:layout_constraintTop_toBottomOf="@+id/battle_hand_iv_showcase">
+            <TextView
+                android:id="@+id/battle_hand_summery_showcase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/lithos_pro_regular"
+                android:textColor="@color/gold"
+                style="@style/textShadow"
+                android:padding="10dp"/>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/troop_selection_buttons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/custom_troop_showcase"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_Battle_Hand"
+        app:layout_constraintEnd_toEndOf="@+id/ll_troop_showcase"
+        app:layout_constraintStart_toStartOf="@id/ll_troop_showcase"
+        app:layout_constraintTop_toTopOf="@+id/ll_Battle_Hand"
+        android:gravity="center"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/selection_troops_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="back"
+            android:fontFamily="@font/lithos_pro_regular"
+            style="@style/textShadow"
+            android:textSize="20sp"
+            android:textColor="#75654c"
+            android:layout_margin="10dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/selection_troops_start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="start"
+            android:fontFamily="@font/lithos_pro_regular"
+            android:textSize="20sp"
+            style="@style/textShadow"
+            android:textColor="#75654c"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
